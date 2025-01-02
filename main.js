@@ -1,19 +1,32 @@
 const titles = [
+  // audio related
   "Composer",
-  "Artist",
   "Sound Designer",
-  "Designer",
-  "Programmer",
-  "Software Engineer",
-  "Photographer",
-  "Game Developer",
-  "Musician",
-  "Film Composer",
+  "Audio Designer",
+  "Audio Engineer",
+  "Audio Director",
   "Digital Artist",
   "Audio Artist",
+  "Film Composer",
+  "Recording Artist",
+  "Musician",
+  // tech related
+  "Programmer",
+  "Software Engineer",
+  "Game Developer",
+  "Audio Programmer",
+  // education related
+  "Educator",
+  "Professor",
+  "Teacher",
+  "Instructor",
+  // misc
+  "Designer",
   "Installation Artist",
-  "Audio Director",
-  "Audio Designer",
+  "Photographer",
+  "Artist",
+  "Watchmaker",
+  "Renaissance Man",
 ];
 
 var randomOrderTitles = [];
@@ -64,7 +77,7 @@ function changeTextRandomly() {
 
 $(document).ready(function () {
   randomOrderTitles = generateTitlesArray();
-  if (titles[0] == randomOrderTitles[0]) currentIndex++; // if "Composer" throw the index ahead
+  if (titles[0] == randomOrderTitles[0]) currentIndex++; // if "Composer" is the first to follow, throw the index ahead
 
   // change every 3 seconds
   setInterval(changeTextRandomly, 3000);
