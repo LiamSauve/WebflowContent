@@ -6,6 +6,7 @@ const titles = [
   "Software Engineer",
   "Photographer",
   "Game Developer",
+  "Cool Guy",
 ];
 
 var randomOrderTitles = [];
