@@ -2,11 +2,12 @@ const titles = [
   "Composer",
   "Artist",
   "Sound Designer",
-  "Programmer",
+  /*  "Programmer",
   "Software Engineer",
   "Photographer",
   "Game Developer",
   "Cool Guy",
+  "Musician",*/
 ];
 
 var randomOrderTitles = [];
