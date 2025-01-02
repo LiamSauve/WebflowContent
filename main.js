@@ -8,25 +8,28 @@ const titles = [
   "Digital Artist",
   "Audio Artist",
   "Film Composer",
+  "Musical Composer",
   "Recording Artist",
   "Musician",
+  "Producer",
   // tech related
   "Programmer",
   "Software Engineer",
   "Game Developer",
   "Audio Programmer",
+  "Technical Director",
   // education related
   "Educator",
   "Professor",
   "Teacher",
   "Instructor",
   // misc
+  "Creative",
   "Designer",
   "Installation Artist",
   "Photographer",
   "Artist",
-  "Watchmaker",
-  "Renaissance Man",
+  "Creative",
 ];
 
 var randomOrderTitles = [];
@@ -44,9 +47,8 @@ function generateTitlesArray() {
   return newArray;
 }
 
-function changeTextRandomly() {
+function changeToNextText() {
   var nextString = randomOrderTitles[currentIndex];
-
   const title = document.querySelector("[changing-title='changing-title']");
 
   if (title) {
@@ -77,8 +79,11 @@ function changeTextRandomly() {
 
 $(document).ready(function () {
   randomOrderTitles = generateTitlesArray();
-  if (titles[0] == randomOrderTitles[0]) currentIndex++; // if "Composer" is the first to follow, throw the index ahead
+  while (titles[currentIndex].includes("Composer")) {
+    //
+    currentIndex++;
+  }
 
-  // change every 3 seconds
-  setInterval(changeTextRandomly, 3000);
+  // change text every 3 seconds
+  setInterval(changeToNextText, 3000);
 });
