@@ -5,31 +5,68 @@ const titles = [
   "Audio Designer",
   "Audio Engineer",
   "Audio Director",
-  "Digital Artist",
   "Audio Artist",
+  "Technical Sound Designer",
+  "Technical Audio Designer",
   "Film Composer",
   "Musical Composer",
   "Recording Artist",
   "Musician",
   "Producer",
+  "Music Producer",
+  "Music Designer",
+  "Mix Engineer",
+  "Mastering Engineer",
+  "Interactive Audio Designer",
+  "Spatial Audio Designer",
+  "Immersive Sound Designer",
+  "Orchestrator",
+  "Score Programmer",
+  "Game Audio Designer",
+  "Foley Artist",
+
   // tech related
   "Programmer",
   "Software Engineer",
   "Game Developer",
   "Audio Programmer",
   "Technical Director",
+  "DSP Engineer",
+  "DSP Programmer",
+  "Interactive Developer",
+  "Interactive Designer",
+  "Creative Technologist",
+  "Signal Processing Engineer",
+  "Tool Developer",
+  "Unity Developer",
+  "Unreal Developer",
+
   // education related
   "Educator",
   "Professor",
   "Teacher",
   "Instructor",
+  "Mentor",
+  "Curriculum Developer",
+  "Workshop Leader",
+  "Speaker",
+  "Panelist",
+  "Researcher",
+
   // misc
   "Creative",
   "Designer",
   "Installation Artist",
   "Photographer",
   "Artist",
-  "Creative",
+  "Storyteller",
+  "Art Director",
+  "Visual Artist",
+  "Technomancer",
+  "Media Composer",
+  "Digital Alchemist",
+  "Performer",
+  "Entertainer",
 ];
 
 var randomOrderTitles = [];
@@ -78,9 +115,9 @@ function changeToNextText() {
 }
 
 $(document).ready(function () {
-  randomOrderTitles = generateTitlesArray();
-  while (titles[currentIndex].includes("Composer")) {
-    //
+  randomOrderTitles = generateTitlesArray(); // shuffle the original titles into an array
+  while (randomOrderTitles[currentIndex].includes("Composer")) {
+    // push the index ahead if "Composer" will show up right after
     currentIndex++;
   }
 
