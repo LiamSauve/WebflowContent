@@ -51,7 +51,6 @@ const titles = [
   "Workshop Leader",
   "Speaker",
   "Panelist",
-  "Researcher",
 
   // misc
   "Creative",
@@ -60,10 +59,6 @@ const titles = [
   "Photographer",
   "Artist",
   "Storyteller",
-  "Visual Artist",
-  "Technomancer",
-  "Media Composer",
-  "Digital Alchemist",
   "Performer",
   "Entertainer",
 ];
