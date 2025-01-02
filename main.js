@@ -60,7 +60,6 @@ const titles = [
   "Photographer",
   "Artist",
   "Storyteller",
-  "Art Director",
   "Visual Artist",
   "Technomancer",
   "Media Composer",
