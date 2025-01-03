@@ -1,6 +1,5 @@
 const titles = [
   // audio related
-  "Composer",
   "Sound Designer",
   "Audio Designer",
   "Audio Engineer",
@@ -73,6 +72,9 @@ function generateTitlesArray() {
   while (original.length > 0) {
     let randomIndex = Math.floor(Math.random() * original.length);
     newArray.push(original.splice(randomIndex, 1)[0]);
+    if (randomIndex % 5 == 0) {
+      newArray.push("Composer");
+    }
   }
 
   return newArray;
