@@ -27,6 +27,8 @@ const titles = [
   // tech related
   "Programmer",
   "Software Engineer",
+  "Senior Software Engineer",
+  "Team Lead Software Engineer",
   "Game Developer",
   "Audio Programmer",
   "Technical Director",
