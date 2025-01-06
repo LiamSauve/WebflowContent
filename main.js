@@ -20,6 +20,7 @@ const titles = [
   "Spatial Audio Designer",
   "Immersive Sound Designer",
   "Orchestrator",
+  "Score Composer",
   "Score Programmer",
   "Game Audio Designer",
   "Foley Artist",
@@ -27,8 +28,6 @@ const titles = [
   // tech related
   "Programmer",
   "Software Engineer",
-  "Senior Software Engineer",
-  "Team Lead Software Engineer",
   "Game Developer",
   "Audio Programmer",
   "Technical Director",
